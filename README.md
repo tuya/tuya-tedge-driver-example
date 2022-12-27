@@ -1,3 +1,4 @@
+[English](README.md) | [中文版](README_CN.md)
 # driver-example: Tedge Driver Demo
 
 ## build

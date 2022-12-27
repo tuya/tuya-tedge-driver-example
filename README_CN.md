@@ -1,3 +1,4 @@
+[English](README.md) | [中文版](README_CN.md)
 # driver-example: Tedge 驱动程序Demo
 
 ## 编译
