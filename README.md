@@ -1,35 +1,37 @@
 [English](README.md) | [中文版](README_CN.md)
-# driver-example: Tedge Driver Demo
+# driver-example: TEdge Driver Demo
 
-## build
+## Build
 * `go mod vendor && make build`
 
-## Publish Docker Image
-* Prepare environment: `docker buildx create --name mybuilder` && `docker buildx use mybuilder`
-* Package and Publish: `./script/dockerbuild.sh v1.0.0`
-* Script Release Notes：`dockerbuild.sh` This script will build x86 and armv7 architecture images at the same time.
+## Release image
 
-## Driver Notes
-* Tedge supports two running modes: DP mode and Thing mode (TyLink).
-* This Driver Demo contains code samples of both DP model and Thing model.
-* Unless otherwise specified, Tedge runs in DP model by default.
-* Driver samples introduction：
-    - Standard driver development paradigm
-    - Example of Driver service interface implementation
-    - Example of sub device activation
-    - Example of sub device status update
-    - Example of sub device DP message reporting
-    - Example of sub device command processing
+1. Prepare the environment: `docker buildx create --name mybuilder`, `docker buildx use mybuilder`
+2. Package and release image: `./script/dockerbuild.sh v1.0.0`
 
-### DP mode
-* Dp code samples: `dpdriver`
+**Note**: Both x86 and ARMv7 images are released by the script`dockerbuild.sh`.
 
-### TyLink mode
-* TyLink code samples: `tydriver`
+## Description
+* TEdge supports two running modes: DP model and things data model (TuyaLink)
+* The drivers for both the DP model and TuyaLink model are described in the following samples.
+* Unless otherwise specified, TEdge runs with the DP model.
+* The following driver features are described in the sample:
+   - Standard driver programming
+   - Implementation of the driver service interface
+   - Sub-device activation
+   - Sub-device status update
+   - Sub-device DP reporting
+   - Sub-device command processing
 
-## Technical Support
+### DP model
+* Sample: `dpdriver`
+
+### Things data model
+* Sample: `tydriver`
+
+## Technical support
 Tuya IoT Developer Platform: https://developer.tuya.com/en/
 
 Tuya Developer Help Center: https://support.tuya.com/en/help
 
-Tuya Work Order System: https://service.console.tuya.com/
+Tuya Service Ticket System: https://service.console.tuya.com/
