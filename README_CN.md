@@ -27,6 +27,9 @@
 ### 物模型
 * 代码实现示例：`tydriver`
 
+### DP模型，接入MQTT协议设备
+* Sample: `dpmqtt`
+
 ## 技术支持
 Tuya IoT Developer Platform: https://developer.tuya.com/en/
 

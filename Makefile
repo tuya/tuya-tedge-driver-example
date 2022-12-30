@@ -5,7 +5,11 @@ GOFLAGS=-ldflags  "-s -w"
 
 SERVICES=driver-example
 build:
-	$(GO) build $(GOFLAGS) -o $(SERVICES) main.go
+	$(GO) build $(GOFLAGS) -o $(SERVICES) ./cmd/nomqtt/main.go
+
+
+withmqtt:
+	$(GO) build $(GOFLAGS) -o $(SERVICES) ./cmd/withmqtt/main.go
 
 clean:
 	rm -f $(SERVICES)
