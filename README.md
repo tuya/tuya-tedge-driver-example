@@ -29,6 +29,9 @@
 ### Things data model
 * Sample: `tydriver`
 
+### DP model, device with mqtt protocol
+* Sample: `dpmqtt`
+
 ## Technical support
 Tuya IoT Developer Platform: https://developer.tuya.com/en/
 
