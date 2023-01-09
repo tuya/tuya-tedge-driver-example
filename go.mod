@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/eclipse/paho.mqtt.golang v1.4.2
 	github.com/gin-gonic/gin v1.8.1
-	github.com/tuya/tuya-tedge-driver-sdk-go v1.0.0
+	github.com/tuya/tuya-tedge-driver-sdk-go v1.0.2
 )
 
 require (
